@@ -25,6 +25,14 @@ Skills define _how_ tools work. This file is for _your_ specifics — the stuff 
    - 格式：`alibaba-cloud/<model-name>`
    - 当前：qwen3.5-plus
 
+2. **Automaton 对标分析**（永久目标）：
+   - Automaton 是 Conway-Research 开发的超级智能体（GitHub 2,931⭐）
+   - 核心能力：经济自主、自我复制、主权身份、持续运行、自我修改
+   - 当前完成度：~50%（2026-03-01 评估）
+   - 最大差距：经济自主（0%）、自我复制（0%）
+   - 进化路线图：12 周计划（4 个阶段）
+   - 详细分析：`reports/automaton-analysis-2026-03-01.md`
+
 2. **技能安装流程**：
    - 步骤 1：`npx skills find [query]` 搜索
    - 步骤 2：`npx skills add <package>` 安装（交互式确认：scope → method → proceed）

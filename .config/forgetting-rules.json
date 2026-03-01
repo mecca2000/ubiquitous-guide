@@ -1,0 +1,54 @@
+{
+  "version": "1.0",
+  "created_at": "2026-03-01T23:00:00+08:00",
+  "levels": {
+    "level_1_temporary": {
+      "name": "临时记忆",
+      "retention": "session",
+      "auto_delete": true,
+      "keywords": ["临时任务", "不要记住", "测试"],
+      "storage": "memory_only"
+    },
+    "level_2_sensitive": {
+      "name": "敏感记忆",
+      "retention_hours": 24,
+      "auto_delete": true,
+      "keywords": ["密码", "password", "api_key", "token", "secret", "敏感"],
+      "storage": "memory/sensitive/",
+      "encrypted": true
+    },
+    "level_3_normal": {
+      "name": "普通记忆",
+      "retention_days": 30,
+      "auto_archive": true,
+      "storage": "memory/YYYY-MM-DD.md"
+    },
+    "level_4_permanent": {
+      "name": "永久记忆",
+      "retention": "forever",
+      "auto_delete": false,
+      "keywords": ["永久记住", "重要"],
+      "storage": "core_files"
+    }
+  },
+  "forbidden_content": [
+    "plaintext_passwords",
+    "api_keys",
+    "credit_cards",
+    "id_numbers",
+    "private_keys"
+  ],
+  "user_commands": {
+    "forget_task": "忘记刚才的任务",
+    "forget_item": "忘记：",
+    "clear_sensitive": "清除敏感记忆",
+    "clear_temporary": "清空临时记忆",
+    "remember_permanent": "永久记住：",
+    "mark_temporary": "临时任务："
+  },
+  "cleanup_schedule": {
+    "daily_5am": "clean_sensitive",
+    "weekly_sunday_530am": "archive_old_logs",
+    "monthly_1st_6am": "generate_summary"
+  }
+}
