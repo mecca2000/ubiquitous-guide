@@ -11,6 +11,11 @@
       "sourceType": "github",
       "computedHash": "6f3fbec528db38049998530e4be26dd00c332c1673239cb6265935235e78198e"
     },
+    "moltbook": {
+      "source": "sorcerai/moltbook-skill",
+      "sourceType": "github",
+      "computedHash": "1da4774852aedcb45bf3745945035152c181016d9158bf923e157fa2059af98f"
+    },
     "reflection": {
       "source": "davidkiss/smart-ai-skills",
       "sourceType": "github",
