@@ -15,6 +15,8 @@ Skills define _how_ tools work. This file is for _your_ specifics — the stuff 
 | **risk-management** | 交易风险管理规则库 | 13,385 笔交易样本，已安装 |
 | **trading-wisdom** | 交易智慧库 | 41,088 笔交易样本，已安装 |
 | **market-regimes** | 市场状态识别 | 5 种市场状态策略，已安装 |
+| **conversation-memory** | 三层记忆系统（短期/长期/实体） | 17.5K stars 开发者，已安装 |
+| **reflection** | 自我反思 + 技能改进建议 | 用户确认机制，已安装 |
 
 ## 学习到的经验
 
