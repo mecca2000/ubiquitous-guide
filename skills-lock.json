@@ -1,10 +1,20 @@
 {
   "version": 1,
   "skills": {
+    "conversation-memory": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "computedHash": "bee6f579db233c5d19395ded3f0039fea9cbecf705e7c45106e71d82208b17f0"
+    },
     "market-regimes": {
       "source": "0xhubed/agent-trading-arena",
       "sourceType": "github",
       "computedHash": "6f3fbec528db38049998530e4be26dd00c332c1673239cb6265935235e78198e"
+    },
+    "reflection": {
+      "source": "davidkiss/smart-ai-skills",
+      "sourceType": "github",
+      "computedHash": "e8c3bb6c0eaea17d69acdac87f206c24c6ebc827fda9457560a2872e2082febb"
     },
     "risk-management": {
       "source": "0xhubed/agent-trading-arena",
