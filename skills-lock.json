@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "skills": {
+    "market-regimes": {
+      "source": "0xhubed/agent-trading-arena",
+      "sourceType": "github",
+      "computedHash": "6f3fbec528db38049998530e4be26dd00c332c1673239cb6265935235e78198e"
+    },
+    "risk-management": {
+      "source": "0xhubed/agent-trading-arena",
+      "sourceType": "github",
+      "computedHash": "59aa49396912ae677f864d8dc42d1dd8366b0dd31384844eea8ad665ccb1596f"
+    },
+    "trading-wisdom": {
+      "source": "0xhubed/agent-trading-arena",
+      "sourceType": "github",
+      "computedHash": "53000a6ecfc121c3139aedcad776fbcc0c4a392fe27b18d6e3de6196bb1176df"
+    }
+  }
+}

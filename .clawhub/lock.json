@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "skills": {
+    "searxng": {
+      "version": "1.0.3",
+      "installedAt": 1770711623158
+    },
+    "tavily-search": {
+      "version": "1.0.0",
+      "installedAt": 1772334725691
+    },
+    "find-skills": {
+      "version": "0.1.0",
+      "installedAt": 1772334845478
+    },
+    "proactive-agent": {
+      "version": "3.1.0",
+      "installedAt": 1772336698710
+    },
+    "skill-vetter": {
+      "version": "1.0.0",
+      "installedAt": 1772340462565
+    },
+    "gog": {
+      "version": "1.0.0",
+      "installedAt": 1772340465401
+    },
+    "summarize": {
+      "version": "1.0.0",
+      "installedAt": 1772340468103
+    }
+  }
+}
