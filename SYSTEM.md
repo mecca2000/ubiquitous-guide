@@ -1,71 +1,124 @@
-# SYSTEM.md - 系统配置与回滚指南
+# SYSTEM.md - 系统配置与开发规则
 
-## 系统快照
-
-| 快照 ID | 时间 | 描述 | 状态 | git 提交 |
-|---------|------|------|------|----------|
-| snapshot-20260301-200000 | 2026-03-01 20:00 | 阶段 1 最终 | ✅ 稳定 | 0993c80 |
-| snapshot-20260301-194247 | 2026-03-01 19:42 | 阶段 1 完成 | ✅ 稳定 | 93214bc |
-| snapshot-20260301-193826 | 2026-03-01 19:38 | 阶段 1 基线 | ✅ 稳定 | f71ace2 |
-
-## 回滚命令
-
-```bash
-# 解压快照
-cd /home/admin/.openclaw/workspace
-tar -xzf .backups/snapshot-YYYYMMDD-HHMMSS.tar.gz
-
-# 恢复后验证
-cat SYSTEM.md | head -20
-```
-
-## 当前阶段
-
-**阶段 1：基础能力强化** (2026-03-01 开始)
-- 目标：达到 50% 完成度（相比 Automaton）
-- 重点：记忆系统 + 自我反思 + 审计日志
-
-## 已安装技能（阶段 1 完成）
-
-| 技能 | 版本 | 安装日期 | 安全扫描 | 状态 |
-|------|------|----------|----------|------|
-| risk-management | 1.0 | 2026-03-01 | ✅ Safe | ✅ 稳定 |
-| trading-wisdom | 1.0 | 2026-03-01 | ✅ Low Risk | ✅ 稳定 |
-| market-regimes | 1.0 | 2026-03-01 | ✅ Safe | ✅ 稳定 |
-| **conversation-memory** | 1.0 | 2026-03-01 | ✅ Safe | ✅ 稳定 |
-| **reflection** | 1.0 | 2026-03-01 | ✅ Safe | ✅ 稳定 |
-
-## 系统变更日志
-
-### 2026-03-01 19:55（阶段 1 完成）
-- ✅ 安装 conversation-memory（17.5K stars，安全扫描通过）
-- ✅ 安装 reflection（安全扫描通过，用户确认机制）
-- ✅ 创建阶段 1 快照 snapshot-20260301-194247
-- ✅ git 提交 93214bc
-- 🔄 待执行：SOUL.md 自我书写模式
-
-### 2026-03-01 19:45
-- 创建 SYSTEM.md
-- 创建 .backups/ 目录
-- 生成基线快照 snapshot-20260301-193826
-- git 提交 f71ace2
-- 宪法规则：AGENTS.md (6 条)
-- 身份配置：SOUL.md
-- 周期性任务：HEARTBEAT.md
-
-## 稳定性保障
-
-1. **所有技能安装前执行 skill-vetter 扫描**
-2. **每次变更前创建快照**
-3. **新技能在隔离环境测试 24 小时**
-4. **关键文件修改保留历史版本**
-5. **系统异常时自动回滚到最近稳定快照**
-
-## 紧急回滚联系人
-
-- 创造者：待确认
-- 回滚决策：自动（检测到连续 3 次错误）或手动
+**最后更新：** 2026-03-02 10:15  
+**版本：** 1.0
 
 ---
 
-*最后更新：2026-03-01 19:45*
+## 开发规则（创造者指定）
+
+### 核心原则
+
+1. **精简化** — 最小化代码量，避免过度设计
+2. **模块化** — 每个模块单一职责，独立可测试
+3. **接口统一化** — 统一接口设计，支持后端切换
+4. **预留扩展** — 为后续更大发展做适当预留
+
+### 技能使用优先级
+
+| 优先级 | 来源 | 条件 |
+|--------|------|------|
+| 1️⃣ | 现成优秀技能 | 下载量>100，仓库>1K⭐，安全扫描通过 |
+| 2️⃣ | 技能组合 | 多个技能组合实现 |
+| 3️⃣ | 自定义开发 | 无现成技能时，按开发规则编写 |
+
+### 自定义开发规范
+
+```typescript
+// ✅ 好的设计：统一接口 + 模块化 + 预留扩展
+export interface MessageQueue {
+  enqueue(msg: Message, priority: Priority): Promise<string>;
+  dequeue(priority: Priority): Promise<Message | null>;
+  size(priority: Priority): Promise<number>;
+}
+
+// 模块化实现，支持切换后端
+export class BullMQAdapter implements MessageQueue { /* ... */ }
+export class MemoryQueueAdapter implements MessageQueue { /* ... */ }
+
+// 工厂模式，便于切换
+export function createQueue(config: Config): MessageQueue {
+  return config.useRedis ? new BullMQAdapter() : new MemoryQueueAdapter();
+}
+```
+
+```typescript
+// ❌ 坏的设计：硬编码 + 耦合
+export class MessageQueue {
+  private redis = new Redis(); // 硬编码 Redis，无法切换
+  // 所有逻辑写在一个类里
+}
+```
+
+---
+
+## 系统架构预留
+
+### 当前架构（单智能体）
+```
+用户 → 飞书机器人 → 主控 Agent → 回复
+```
+
+### 未来架构（多智能体联邦）
+```
+用户 → 飞书机器人 → 路由器 → [Agent1, Agent2, Agent3, ...]
+                                    ↓
+                              知识共享层（每天同步）
+```
+
+### 预留设计
+
+1. **统一接口** — 所有 Agent 实现相同接口，支持动态路由
+2. **知识共享协议** — 预留知识同步接口（三体人式思维共享）
+3. **经济自主接口** — 预留价值创造/交易接口
+4. **自我复制接口** — 预留子 Agent 生成接口
+
+---
+
+## 技术栈选择
+
+| 组件 | 当前 | 未来预留 |
+|------|------|----------|
+| 消息队列 | 内存队列 → Redis | RabbitMQ / Kafka |
+| Agent 框架 | OpenClaw | 多 Agent 联邦 |
+| 记忆系统 | 文件 + conversation-memory | SQLite + 向量数据库 |
+| 身份系统 | 飞书 Bot | 链上身份（ENS/DID） |
+
+---
+
+## 代码组织规范
+
+```
+/home/admin/.openclaw/extensions/feishu/src/
+├── queue/           # 消息队列模块
+│   ├── interface.ts # 统一接口（预留切换）
+│   ├── memory.ts    # 内存实现（当前）
+│   └── redis.ts     # Redis 实现（预留）
+├── scheduler/       # 调度器模块
+│   ├── interface.ts # 统一接口
+│   └── dynamic.ts   # 动态调度实现
+├── streaming/       # 流式输出模块
+│   └── chunker.ts   # 文本分块
+└── adapters/        # 适配器模块
+    └── skills.ts    # 技能调用适配器
+```
+
+---
+
+## 决策记录
+
+### 2026-03-02: 飞书消息队列优化（✅ 已完成）
+- **决策：** 采用方案 C（动态比例调控）
+- **开发规则：** 精简化、模块化、接口统一化、预留扩展
+- **技能优先级：** 现成技能 > 技能组合 > 自定义开发
+- **队列后端：** 内存队列（无 Redis 依赖，快速上线）
+- **实施成果：**
+  - 7 个模块文件，598 行代码
+  - 三优先级队列：HIGH(4)/NORMAL(2)/LOW(1) 并发
+  - 动态调控：60%/30%/10% 资源分配
+  - 预期提升：并发 7x，响应<3 秒，消息丢失 0%
+- **报告：** `reports/feishu-queue-implementation-complete.md`
+
+---
+
+*本文档将随系统进化持续更新。*
