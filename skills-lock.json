@@ -146,6 +146,11 @@
       "sourceType": "github",
       "computedHash": "53000a6ecfc121c3139aedcad776fbcc0c4a392fe27b18d6e3de6196bb1176df"
     },
+    "wallet-integration": {
+      "source": "omer-metin/skills-for-antigravity",
+      "sourceType": "github",
+      "computedHash": "b1337b0f9408401e436c18937d01ba56a86db372e751c437f624d4d3e89b296f"
+    },
     "youtube-summarizer": {
       "source": "sickn33/antigravity-awesome-skills",
       "sourceType": "github",
