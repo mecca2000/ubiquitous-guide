@@ -1,20 +1,105 @@
 {
   "version": 1,
   "skills": {
+    "api-integration-builder": {
+      "source": "daffy0208/ai-dev-standards",
+      "sourceType": "github",
+      "computedHash": "8ec497e3edd36f9ade145265dd5203dd26e591d68f75c26ad299abed807f9388"
+    },
+    "blockchain-developer": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "computedHash": "8ab4c0887901edb5ba8f102ab4ad8794b9b734a65856b8e6497756c127806603"
+    },
+    "continuous-learning-v2": {
+      "source": "affaan-m/everything-claude-code",
+      "sourceType": "github",
+      "computedHash": "2cf78e47d78bc4c28d97f11c71237e9e5d3504318ea50ec6f1261978117b8d4d"
+    },
     "conversation-memory": {
       "source": "sickn33/antigravity-awesome-skills",
       "sourceType": "github",
       "computedHash": "bee6f579db233c5d19395ded3f0039fea9cbecf705e7c45106e71d82208b17f0"
+    },
+    "copywriting": {
+      "source": "davila7/claude-code-templates",
+      "sourceType": "github",
+      "computedHash": "1ee9d840d3d1b64a28cbd60f628708596359400d8c40172ed7eedfc4496ff88e"
+    },
+    "customer-support": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "computedHash": "1b9a95e7f294adb3daa5c71839dc070a2f2e277cf187c604cf9251b4c826b228"
+    },
+    "data-analysis": {
+      "source": "supercent-io/skills-template",
+      "sourceType": "github",
+      "computedHash": "d380eb6230b7a285a63b11e18c6c7eeae37f2dd502610ec390975ae1b8627b29"
+    },
+    "dotcom-secrets": {
+      "source": "guia-matthieu/clawfu-skills",
+      "sourceType": "github",
+      "computedHash": "8c327b50b9ea291cb1f844bd6e22458b89bef8fdcac0aeb7152347c5fc5923df"
+    },
+    "email-best-practices": {
+      "source": "resend/email-best-practices",
+      "sourceType": "github",
+      "computedHash": "7e6c8d495e66e88a20dc45d17d24b445d6c5c9072855c78d8800fff994bc813f"
+    },
+    "feishu-lark": {
+      "source": "openclaudia/openclaudia-skills",
+      "sourceType": "github",
+      "computedHash": "0c76949c8c4f2585199e17e47099673ecf25313c4b33bcf334165aaccc488b1d"
+    },
+    "firecrawl": {
+      "source": "firecrawl/cli",
+      "sourceType": "github",
+      "computedHash": "44d84c31430f0fc385d546f8a9cc0b0e844a3b339a9423a189fe4952e9270c13"
+    },
+    "github-workflow-automation": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "computedHash": "93a80aac6f8332783091cb6e7a4ab2693a16e10ed6e7425ed6fb5eac2d289ddd"
+    },
+    "indie-hacker-strategy": {
+      "source": "kostja94/marketing-skills",
+      "sourceType": "github",
+      "computedHash": "78400a163174dfe2d5327eefe5d36e0e231d918ca73f90034b13f2bab2580c3b"
+    },
+    "indie-monetization-strategist": {
+      "source": "erichowens/some_claude_skills",
+      "sourceType": "github",
+      "computedHash": "9cfbaa65019842b6198fa95a35afb8e1d24880a2be074e7c908400e5e1dc465b"
     },
     "market-regimes": {
       "source": "0xhubed/agent-trading-arena",
       "sourceType": "github",
       "computedHash": "6f3fbec528db38049998530e4be26dd00c332c1673239cb6265935235e78198e"
     },
+    "mobile-app-testing": {
+      "source": "aj-geddes/useful-ai-prompts",
+      "sourceType": "github",
+      "computedHash": "5d5c5e25d2dda5ad96c7e95cad5c7fef73358047f5113f9b87e3996f5e19489a"
+    },
     "moltbook": {
       "source": "sorcerai/moltbook-skill",
       "sourceType": "github",
       "computedHash": "1da4774852aedcb45bf3745945035152c181016d9158bf923e157fa2059af98f"
+    },
+    "playwright-cli": {
+      "source": "microsoft/playwright-cli",
+      "sourceType": "github",
+      "computedHash": "7075ab30f588019197a2f1518bb4c9d33d69d33352af079b5f9c60303ad3886e"
+    },
+    "ppt-generation": {
+      "source": "bytedance/deer-flow",
+      "sourceType": "github",
+      "computedHash": "55d7ed3bcdd6d3953de42c66f172d17b6b06e253a4bce26ba80f9198e106a48a"
+    },
+    "referral-program": {
+      "source": "coreyhaines31/marketingskills",
+      "sourceType": "github",
+      "computedHash": "b04bb503500f180280fea269ccdf6f512862413ffa1c872605104cdb5d15bf9e"
     },
     "reflection": {
       "source": "davidkiss/smart-ai-skills",
@@ -26,10 +111,45 @@
       "sourceType": "github",
       "computedHash": "59aa49396912ae677f864d8dc42d1dd8366b0dd31384844eea8ad665ccb1596f"
     },
+    "script-writer": {
+      "source": "ailabs-393/ai-labs-claude-skills",
+      "sourceType": "github",
+      "computedHash": "97f0cdcd52c188a879aabe0a4d2f00e3666cec270c499ad42f744ebe6f73ba3f"
+    },
+    "self-learning": {
+      "source": "philschmid/self-learning-skill",
+      "sourceType": "github",
+      "computedHash": "554f37953a7806ec8866880a585f31e86185542eecd79c1536c55e26218e24ab"
+    },
+    "shopify": {
+      "source": "mrgoonie/claudekit-skills",
+      "sourceType": "github",
+      "computedHash": "04f6b1083bacd7f9f7353288212791b556dec4decc5e66d55f7c079faa354e1a"
+    },
+    "social-media-marketing": {
+      "source": "dengineproblem/agents-monorepo",
+      "sourceType": "github",
+      "computedHash": "1b248a7a12c2f91ad0a20a058d6b37d43e47c32c230a35f3f27855a4f752e10b"
+    },
+    "telegram-mini-app": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "computedHash": "1929257b6cb646dcddfbb92e8729487c06ed4bcbed553384fcca6a9f4dd49499"
+    },
+    "tiktok-research": {
+      "source": "bradautomates/head-of-content",
+      "sourceType": "github",
+      "computedHash": "b1d1372f93a44247fedeb2e6fa7c5bef1f9857fa91c8a81aa39d61811c2e6cd2"
+    },
     "trading-wisdom": {
       "source": "0xhubed/agent-trading-arena",
       "sourceType": "github",
       "computedHash": "53000a6ecfc121c3139aedcad776fbcc0c4a392fe27b18d6e3de6196bb1176df"
+    },
+    "youtube-summarizer": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "computedHash": "4ef38087bfa48de17b78512d7d0d1bf54bb505b7458f22d9ce299612b6644a44"
     }
   }
 }

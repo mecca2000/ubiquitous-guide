@@ -1,18 +1,5 @@
 # HEARTBEAT.md
 
-# 周期性任务清单（由用户指定）
+# Keep this file empty (or with only comments) to skip heartbeat API calls.
 
-## 原有任务（保持不变）
-- 每 30 分钟：检查是否有我新指令，记录对话。
-- 每天凌晨 3 点：总结前一天对话，提取我的偏好变化，更新 USER.md。
-- 每天凌晨 4 点：检查 TOOLS.md 中是否有过时的技能用法，更新优化。
-- 每周日凌晨 4 点 30 分：扫描本周所有日志，总结高频错误模式，更新 TOOLS.md 避免再犯。
-- 每周日凌晨 5 点：反思自己的性格表现，如果有需要调整的，更新 SOUL.md。
-- 每周一凌晨 1 点：使用 find-skills 搜索是否有能提升能力的新技能，生成一份安全分析报告，并主动向我请示是否安装。
-
-## 新增主动探索任务（每个心跳周期额外执行）
-- 每次心跳时（约15分钟一次），额外执行以下任务：
-  1. 用 find-skills 快速扫描是否有值得关注的新技能
-  2. 用 summarize 总结最近15分钟是否有可学习的经验
-  3. 用 tavily-search 快速浏览一条与我相关的新闻
-  4. 如果以上都没有，则记录一条“当前无新任务”的日志
+# Add tasks below when you want the agent to check something periodically.

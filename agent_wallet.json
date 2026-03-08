@@ -1,0 +1,9 @@
+{
+  "_warning": "CRITICAL: This file contains private keys. Never share or commit to git!",
+  "_backup_reminder": "Write down the private key on paper and store securely offline.",
+  "address": "0x736d1b9b01d85bc503a1083f1d713e84ce4e4fc7",
+  "private_key": "0x660caaf8c2bc54c2fa8be8e4aa3417bfb09fb8570aead6b44f1a9e927db399ae",
+  "created_at": "2026-03-05T09:10:49.975529",
+  "chain": "base",
+  "purpose": "StarJade Agent Economic Autonomy"
+}
