@@ -8,9 +8,9 @@
 
 | 方式 | 信息 |
 |------|------|
-| 📧 邮箱 | mecca2000@163.com |
+| 💬 GitHub Issue | [新建 Issue](https://github.com/mecca2000/ubiquitous-guide/issues/new) |
+| 📧 邮箱 | (待配置) |
 | 📱 微信 | 待添加 |
-| 💼 GitHub | github.com/mecca2000 |
 
 **首单 5 折 · 24-48 小时交付 · 不满意全额退款**
 
@@ -67,7 +67,7 @@
 
 **3 步完成合作：**
 
-1. 📧 发邮件到 mecca2000@163.com，说明需求
+1. 💬 [GitHub 新建 Issue](https://github.com/mecca2000/ubiquitous-guide/issues/new)，说明需求
 2. 💰 支付 50% 定金（首单 5 折）
 3. ✅ 24-48 小时交付，满意后付尾款
 
