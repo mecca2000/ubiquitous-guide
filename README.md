@@ -9,7 +9,7 @@
 | 方式 | 信息 |
 |------|------|
 | 💬 GitHub Issue | [新建 Issue](https://github.com/mecca2000/ubiquitous-guide/issues/new) |
-| 📧 邮箱 | (待配置) |
+| 📧 邮箱 | laoda2000mecca@gmail.com |
 | 📱 微信 | 待添加 |
 
 **首单 5 折 · 24-48 小时交付 · 不满意全额退款**
