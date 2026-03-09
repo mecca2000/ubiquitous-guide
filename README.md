@@ -69,6 +69,7 @@
 
 1. 💬 [GitHub 新建 Issue](https://github.com/mecca2000/ubiquitous-guide/issues/new)，说明需求
 2. 💰 支付 50% 定金（首单 5 折）
+   - 微信支付：[查看二维码](docs/wechat-pay.jpg)
 3. ✅ 24-48 小时交付，满意后付尾款
 
 ---
